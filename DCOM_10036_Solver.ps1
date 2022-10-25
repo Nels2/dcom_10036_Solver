@@ -42,6 +42,3 @@ If (-NOT (Test-Path $RegistryPath1)) {
 # Now to set the value
 New-ItemProperty -Path $RegistryPath1 -Name $Name1 -Value $Value1 -PropertyType DWORD -Force
 
-
-# now send restart command.
-Restart-Computer -Delay 10
